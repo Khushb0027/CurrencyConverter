@@ -1,0 +1,28 @@
+{
+  "cli": {
+    "version": ">= 2.8.0"
+  },
+  "build": {
+    "development": {
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "ios": {
+        "buildConfiguration": "Debug"
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "developmentClient":false,
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}
